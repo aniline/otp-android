@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/Save" android:icon="@android:drawable/ic_menu_save" android:enabled="true" android:visible="true" android:checkable="false" android:title="@string/save"></item>
+    <item android:id="@+id/Restore" android:title="@string/restore" android:icon="@android:drawable/ic_menu_recent_history" android:enabled="false" android:visible="true" android:checkable="false"></item>
+    
+
+</menu>

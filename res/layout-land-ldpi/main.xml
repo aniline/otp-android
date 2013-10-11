@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- Sequence and seed -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/sequence" />
+
+            <EditText
+                android:id="@+id/otp_seq"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:hint="@string/hintseq"
+                android:lines="1"
+                android:maxWidth="220dp"
+                android:minWidth="220dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/seed" />
+
+            <EditText
+                android:id="@+id/otp_seed"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="@string/hintseed"
+                android:lines="1"
+                android:maxWidth="220dp"
+                android:minWidth="220dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Pass phrase -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passphrase" />
+
+        <EditText
+            android:id="@+id/otp_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/hintpassphrase"
+            android:lines="1"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Algorithm and buttons -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/alg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/otp_alg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/otp_md4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/alg_md4" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/otp_md5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:checked="true"
+                android:text="@string/alg_md5" >
+            </RadioButton>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/otp_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/compute" />
+
+            <Button
+                android:id="@+id/otp_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/reset" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Response -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resp" />
+
+        <TextView
+            android:id="@+id/otp_resp"
+            style="@style/otp_response_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/noresp" />
+    </LinearLayout>
+
+</LinearLayout>

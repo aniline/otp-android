@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GetOtp!</string>
+    <string name="app_name">One Time Password</string>
+<string name="sequence">Sequence Number</string>
+<string name="seed">Seed</string>
+<string name="passphrase">Passphrase</string>
+<string name="alg">Algorithm</string>
+<string name="response">Response</string>
+<string name="hintseq">Sequence number</string>
+<string name="hintseed">Seed String</string>
+<string name="hintpassphrase">Type Secret Passphrase</string>
+<string name="noresp">Configure all the parameters and hit compute</string>
+<string name="alg_md5">MD5 hash</string>
+<string name="alg_md4">MD4 Hash</string>
+<string name="compute">Compute</string>
+<string name="reset">Reset</string>
+<string name="empty"></string>
+<string name="resp">Response</string>
+<string name="error_badseq">ERROR: Bad sequence number.</string>
+<string name="error_badpass">ERROR: Bad Passphrase</string>
+<string name="error_badseed">ERROR: Bad seed value</string>
+<string name="error_bigseq">ERROR: Sequence number too big (&gt; 10000)</string>
+<string name="error_smallseq">ERROR: Sequence number too small (&lt; 5)</string>
+<string name="error_bigpass">ERROR: Password too big</string>
+<string name="error_smallpass">ERROR: Password too small</string>
+<string name="save">Save</string>
+<string name="restore">Restore</string>
+</resources>
